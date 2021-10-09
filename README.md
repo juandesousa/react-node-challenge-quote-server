@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `API`
+
+Run the API https://github.com/juandesousa/node-challenge-quote-server
+
 ### `npm start`
 
 Runs the app in the development mode.\
