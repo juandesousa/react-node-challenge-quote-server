@@ -20,7 +20,7 @@ function App() {
     console.log(searchTerm)
     fetch(`http://localhost:5000/quotes/search?term=${searchTerm}`)
     .then(res => res.json())
-    .then(data => data.length>0 ? setSearchRandom(data[0]) : setSearchRandom({"quote":"No Results", "author":""}));
+    .then(data => data.length>0 ? setSearchRandom(data[Math.floor(Math.random() * data.length)]) : setSearchRandom({"quote":"No Results"}));
   }
 
 
